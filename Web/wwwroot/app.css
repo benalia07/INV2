@@ -108,14 +108,13 @@ h1:focus {
 
 /* Cancel Button - Neutral */
 .btn-cancel {
-    background-color: #F2E5BF;
+    font-weight: 500;
+    background-color: transparent;
     color: #257180;
-    border: 1px solid #257180;
+    text-decoration: underline;
 }
 
-.btn-cancel:hover {
-    background-color: #e4d7ae;
-}
+
 
 /* Delete Button - Warning */
 .btn-delete {
@@ -129,5 +128,13 @@ h1:focus {
 
 .footer-form {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
+
+
+/*tab*/
+tbody tr:hover {
+    background-color: antiquewhite;
+    cursor: pointer; 
+}
+/*===================*/

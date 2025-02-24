@@ -1,4 +1,4 @@
-﻿using INV.Domain.Entities.ProductEntity;
+﻿using INV.Domain.Entities.Products;
 
 namespace INV.App.Products
 {
@@ -7,6 +7,6 @@ namespace INV.App.Products
         Task<int> createProduct(Product product);
         Task<int> SetProducts(Product product);
         Task<int> RemoveProduct(Guid id);
-        Task<List<Product>> SelectProductsByPurchaseOrderId(Guid purchaseID);
+        Task<List<Product>> SelectProducts();
     }
 }

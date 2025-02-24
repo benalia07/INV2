@@ -1,0 +1,718 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\Web\\INV.Web.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj",
+        "projectName": "INV.App",
+        "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj",
+        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "BootstrapBlazor.BootstrapIcon.Extensions": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "NumberToWordsArabic": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "PuppeteerSharp": {
+              "target": "Package",
+              "version": "[20.1.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj",
+        "projectName": "INV.Domain",
+        "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj",
+        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "BootstrapBlazor.BootstrapIcon.Extensions": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "PuppeteerSharp": {
+              "target": "Package",
+              "version": "[20.1.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Implementation\\INV.Implementation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Implementation\\INV.Implementation.csproj",
+        "projectName": "INV.Implementation",
+        "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Implementation\\INV.Implementation.csproj",
+        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Implementation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Infrastructure\\INV.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Infrastructure\\INV.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "BootstrapBlazor.BootstrapIcon.Extensions": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            },
+            "EasternArabicNumeralsConvertor": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Farsi.Library": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "NumberToWordsConverter": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "PuppeteerSharp": {
+              "target": "Package",
+              "version": "[20.1.0, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Infrastructure\\INV.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Infrastructure\\INV.Infrastructure.csproj",
+        "projectName": "INV.Infrastructure",
+        "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Infrastructure\\INV.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "BootstrapBlazor.BootstrapIcon.Extensions": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "PuppeteerSharp": {
+              "target": "Package",
+              "version": "[20.1.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INVUIs\\INVUIs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INVUIs\\INVUIs.csproj",
+        "projectName": "INVUIs",
+        "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INVUIs\\INVUIs.csproj",
+        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INVUIs\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Implementation\\INV.Implementation.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Implementation\\INV.Implementation.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Infrastructure\\INV.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Infrastructure\\INV.Infrastructure.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\Shared\\INV.Shared\\INV.Shared.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\Shared\\INV.Shared\\INV.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Blazorise.Bootstrap5": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "Blazorise.Charts": {
+              "target": "Package",
+              "version": "[1.5.3, )"
+            },
+            "Blazorise.Icons.FontAwesome": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "BootstrapBlazor.BootstrapIcon.Extensions": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\Web\\INV.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\Web\\INV.Web.csproj",
+        "projectName": "INV.Web",
+        "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\Web\\INV.Web.csproj",
+        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.App\\INV.App.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Domain\\INV.Domain.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Implementation\\INV.Implementation.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Implementation\\INV.Implementation.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Infrastructure\\INV.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INV.Infrastructure\\INV.Infrastructure.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INVUIs\\INVUIs.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INVupdate\\INVUIs\\INVUIs.csproj"
+              },
+              "C:\\Users\\Dali_Raki\\Source\\Repos\\Shared\\INV.Shared\\INV.Shared.csproj": {
+                "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\Shared\\INV.Shared\\INV.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Blazor.Bootstrap": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Blazorise.Bootstrap5": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "Blazorise.Charts": {
+              "target": "Package",
+              "version": "[1.5.3, )"
+            },
+            "Blazorise.Icons.FontAwesome": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "BootstrapBlazor.BootstrapIcon.Extensions": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            },
+            "EasternArabicNumeralsConvertor": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Farsi.Library": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "NumberToWordsArabic": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NumberToWordsConverter": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "PuppeteerSharp": {
+              "target": "Package",
+              "version": "[20.1.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dali_Raki\\Source\\Repos\\Shared\\INV.Shared\\INV.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dali_Raki\\Source\\Repos\\Shared\\INV.Shared\\INV.Shared.csproj",
+        "projectName": "INV.Shared",
+        "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\Shared\\INV.Shared\\INV.Shared.csproj",
+        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\Shared\\INV.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

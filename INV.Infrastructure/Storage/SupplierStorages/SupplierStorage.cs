@@ -1,5 +1,10 @@
-﻿using System.Data;
+﻿using System.Collections.Generic;
+using System.Net;
+using System.Numerics;
+using System.Security.Cryptography;
+using BootstrapBlazor.Components;
 using INV.Domain.Entities.SupplierEntity;
+using INV.Domain.Shared;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
@@ -14,73 +19,57 @@ namespace INV.Infrastructure.Storage.SupplierStorages
             _connectionString = configuration.GetConnectionString("INV");
         }
 
-        private const string insertSupplierQuery = @"
-            INSERT INTO Supplier (ID, RC, NIS, RIB, SupplierName, CompanyName, AccountName, Address, Phone, Email, ART, NIF, BankAgency,Status)
-            VALUES (@ID, @RC, @NIS, @RIB, @SupplierName, @CompanyName, @AccountName, @Address, @Phone, @Email, @ART, @NIF, @BankAgency,@Status)";
 
-        private const string SelectAllSuppliersQuery = "SELECT * FROM Supplier";
-        private const string selectSuppliersByIDQuery = "SELECT * FROM Supplier where ID=@ID";
+        private const string insertSupplierCommand= @"
+             INSERT INTO [dbo].[SUPPLIERS] (Id,CompanyName,ManagerName,Address,Phone,Email, RC, NIS, ART,NIF, RIB,  BankAgency)
+             VALUES (@aId, @aCompanyName, @aManagerName, @aAddress, @aPhone, @aEmail, @aRC, @aNIS, @aART, @aNIF, @aRIB, @aBankAgency)";
 
-        private const string updateSupplierQuery = @"
-               UPDATE Supplier 
-SET [RC] = @RC, 
-    [NIS] = @NIS, 
-    [RIB] = @RIB, 
-    [SupplierName] = @SupplierName, 
-    [CompanyName] = @CompanyName, 
-    [AccountName] = @AccountName, 
-    [Address] = @Address, 
-    [Phone] = @Phone, 
-    [Email] = @Email, 
-    [ART] = @ART, 
-    [NIF] = @NIF, 
-    [BankAgency] = @BankAgency
-WHERE [ID] = @ID";
-        private const string selectSupplierCountByIdQuery = "select count(*) from Supplier WHERE RC = @RC";
+        private const string selectAllSuppliersQuery = "SELECT * FROM [dbo].[SUPPLIERS]";
+        private const string selectSuppliersByIdQuery = "SELECT * FROM [dbo].[SUPPLIERS] where Id=@aId";
 
-
-        private static Supplier getAllSupplier(SqlDataReader reader)
+        private const string updateSupplierCommand = @"
+             UPDATE [dbo].[SUPPLIERS] 
+             SET CompanyName = @aCompanyName,ManagerName = @aManagerName,Address = @aAddress, Phone = @aPhone,Email = @aEmail,
+             RC = @aRC, NIS = @aNIS, ART = @aART,NIF = @aNIF,RIB = @aRIB,NIF= @aNIF,BankAgency = @aBankAgency WHERE Id = @aId";
+        
+        private const string selectSupplierCountByIdQuery = "select count(*) from [dbo].[SUPPLIERS]  WHERE RC = @aRC";
+        private static Supplier getSupplierData(SqlDataReader reader)
         {
             return new Supplier
             {
-                ID = (Guid)reader["ID"],
-                RC = reader["RC"].ToString(),
-                NIS = (long)reader["NIS"],
-                RIB = reader["RIB"].ToString(),
-                SupplierName = reader["SupplierName"].ToString(),
-                CompanyName = reader["CompanyName"].ToString(),
-                AccountName = reader["AccountName"].ToString(),
-                Address = reader["Address"].ToString(),
-                Phone = reader["Phone"].ToString(),
-                Email = reader["Email"].ToString(),
-                ART = (long)reader["ART"],
-                NIF = (long)reader["NIF"],
-                BankAgency = reader["BankAgency"].ToString(),
-                State = Enum.TryParse<SupplierState>(reader["Status"].ToString(), out var state)
-                    ? state
-                    : SupplierState.Deleted
+                Id = (Guid)reader["Id"],
+                CompanyName = (string)reader["CompanyName"],
+                ManagerName = (string)reader["ManagerName"],
+                Address = (string)reader["Address"],
+                Phone = (string)reader["Phone"],
+                Email = (string)reader["Email"],
+                RC = (string)reader["RC"],
+                NIS = (string)reader["NIS"],
+                ART = (string)reader["ART"],
+                RIB = (string)reader["RIB"],
+                NIF = (string)reader["NIF"],
+                BankAgency = (string)reader["BankAgency"],
+                State = (SupplierState)reader["Status"]
             };
         }
 
         public async Task<int> InsertSupplier(Supplier supplier)
         {
             using var sqlConnection = new SqlConnection(_connectionString);
-            using var cmd = new SqlCommand(insertSupplierQuery, sqlConnection);
+            using var cmd = new SqlCommand(insertSupplierCommand, sqlConnection);
 
-            cmd.Parameters.AddWithValue("@ID", supplier.ID);
-            cmd.Parameters.AddWithValue("@RC", supplier.RC);
-            cmd.Parameters.AddWithValue("@NIS", supplier.NIS);
-            cmd.Parameters.AddWithValue("@RIB", supplier.RIB);
-            cmd.Parameters.AddWithValue("@SupplierName", supplier.SupplierName);
-            cmd.Parameters.AddWithValue("@CompanyName", supplier.CompanyName);
-            cmd.Parameters.AddWithValue("@AccountName", supplier.AccountName);
-            cmd.Parameters.AddWithValue("@Address", supplier.Address);
-            cmd.Parameters.AddWithValue("@Phone", supplier.Phone);
-            cmd.Parameters.AddWithValue("@Email", supplier.Email);
-            cmd.Parameters.AddWithValue("@ART", supplier.ART);
+            cmd.Parameters.AddWithValue("@aId", supplier.Id);
+            cmd.Parameters.AddWithValue("@aCompanyName", supplier.CompanyName);
+            cmd.Parameters.AddWithValue("@aManagerName", supplier.ManagerName);
+            cmd.Parameters.AddWithValue("@aAddress", supplier.Address);
+            cmd.Parameters.AddWithValue("@aPhone", supplier.Phone);
+            cmd.Parameters.AddWithValue("@aEmail", supplier.Email);
+            cmd.Parameters.AddWithValue("@aRC", supplier.RC);
+            cmd.Parameters.AddWithValue("@aNIS", supplier.NIS);
+            cmd.Parameters.AddWithValue("@aART", supplier.ART);
             cmd.Parameters.AddWithValue("@NIF", supplier.NIF);
-            cmd.Parameters.AddWithValue("@BankAgency", supplier.BankAgency);
-            cmd.Parameters.AddWithValue("@Status", 1);
+            cmd.Parameters.AddWithValue("@aRIB", supplier.RIB);
+            cmd.Parameters.AddWithValue("@aBankAgency", supplier.BankAgency);
             await sqlConnection.OpenAsync();
             return await cmd.ExecuteNonQueryAsync();
         }
@@ -90,14 +79,14 @@ WHERE [ID] = @ID";
             var suppliers = new List<Supplier>();
 
             using var sqlConnection = new SqlConnection(_connectionString);
-            using var cmd = new SqlCommand(SelectAllSuppliersQuery, sqlConnection);
+            using var cmd = new SqlCommand(selectAllSuppliersQuery, sqlConnection);
 
             await sqlConnection.OpenAsync();
             using var reader = await cmd.ExecuteReaderAsync();
 
             while (await reader.ReadAsync())
             {
-                suppliers.Add(getAllSupplier(reader));
+                suppliers.Add(getSupplierData(reader));
             }
 
             return suppliers;
@@ -106,38 +95,34 @@ WHERE [ID] = @ID";
         public async Task<Supplier?> SelectSupplierByID(Guid id)
         {
             using var sqlConnection = new SqlConnection(_connectionString);
-            using var cmd = new SqlCommand(selectSuppliersByIDQuery, sqlConnection);
-            cmd.Parameters.AddWithValue("@ID", id);
+            using var cmd = new SqlCommand(selectSuppliersByIdQuery, sqlConnection);
+            cmd.Parameters.AddWithValue("@aId", id);
 
             await sqlConnection.OpenAsync();
             using var reader = await cmd.ExecuteReaderAsync();
 
-            if (await reader.ReadAsync())
-            {
-                return getAllSupplier(reader);
-            }
-
-            return null;
+            return await  reader.ReadAsync() ? getSupplierData(reader) : null;
+            
+            
         }
 
         public async Task<int> UpdateSupplier(Supplier supplier)
         {
             using var sqlConnection = new SqlConnection(_connectionString);
-            using var cmd = new SqlCommand(updateSupplierQuery, sqlConnection);
+            using var cmd = new SqlCommand(updateSupplierCommand, sqlConnection);
 
-            cmd.Parameters.AddWithValue("@ID", supplier.ID);
-            cmd.Parameters.AddWithValue("@RC", supplier.RC);
-            cmd.Parameters.AddWithValue("@NIS", supplier.NIS);
-            cmd.Parameters.AddWithValue("@RIB", supplier.RIB);
-            cmd.Parameters.AddWithValue("@SupplierName", supplier.SupplierName);
-            cmd.Parameters.AddWithValue("@CompanyName", supplier.CompanyName);
-            cmd.Parameters.AddWithValue("@AccountName", supplier.AccountName);
-            cmd.Parameters.AddWithValue("@Address", supplier.Address);
-            cmd.Parameters.AddWithValue("@Phone", supplier.Phone);
-            cmd.Parameters.AddWithValue("@Email", supplier.Email);
-            cmd.Parameters.AddWithValue("@ART", supplier.ART);
-            cmd.Parameters.AddWithValue("@NIF", supplier.NIF);
-            cmd.Parameters.AddWithValue("@BankAgency", supplier.BankAgency);
+            cmd.Parameters.AddWithValue("@aId", supplier.Id);
+            cmd.Parameters.AddWithValue("@aCompanyName", supplier.CompanyName);
+            cmd.Parameters.AddWithValue("@aManagerName", supplier.ManagerName);
+            cmd.Parameters.AddWithValue("@aPhone", supplier.Phone);
+            cmd.Parameters.AddWithValue("@aEmail", supplier.Email);
+            cmd.Parameters.AddWithValue("@aAddress", supplier.Address);
+            cmd.Parameters.AddWithValue("@aRC", supplier.RC);
+            cmd.Parameters.AddWithValue("@aNIS", supplier.NIS);
+            cmd.Parameters.AddWithValue("@aART", supplier.ART);
+            cmd.Parameters.AddWithValue("@aNIF", supplier.NIF);
+            cmd.Parameters.AddWithValue("@aRIB", supplier.RIB);
+            cmd.Parameters.AddWithValue("@aBankAgency", supplier.BankAgency);
 
             await sqlConnection.OpenAsync();
             return await cmd.ExecuteNonQueryAsync();
@@ -148,7 +133,7 @@ WHERE [ID] = @ID";
             await using var connection = new SqlConnection(_connectionString);
 
             SqlCommand command = new SqlCommand(selectSupplierCountByIdQuery, connection);
-            command.Parameters.AddWithValue("@RC", rc);
+            command.Parameters.AddWithValue("@aRC", rc);
             connection.Open();
 
             int count = (int)(await command.ExecuteScalarAsync() ?? 0);

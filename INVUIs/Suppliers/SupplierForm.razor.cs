@@ -1,13 +1,15 @@
 ﻿using INV.App.Suppliers;
 using INV.Domain.Entities.SupplierEntity;
 using INV.Domain.Shared;
-using INVUIs.Models.Supplier;
+using INVUIs.Suppliers.Models;
 using Microsoft.AspNetCore.Components;
 
 namespace INVUIs.Suppliers
 {
-    public partial class SupplierForm
+    public partial class SupplierForm : ComponentBase
     {
+       // [Parameter]
+      //  public EventCallback<SupplierInfo> OnSave { get; set; }
         [Inject] public ISupplierService SupplierService { get; set; }
         SupplierModel newSupplier = new SupplierModel();
         private bool displayModal = false;
@@ -16,9 +18,9 @@ namespace INVUIs.Suppliers
 
         private void close()
         {
-            newSupplier = new SupplierModel(); // Reset instead of null
+            newSupplier = new SupplierModel();
             displayModal = false;
-            StateHasChanged(); // Force UI re-render
+            StateHasChanged(); 
         }
 
 
@@ -34,10 +36,9 @@ namespace INVUIs.Suppliers
             {
                 var sup = new Supplier()
                 {
-                    ID = Guid.NewGuid(),
-                    SupplierName = newSupplier.NameSupplier,
+                    Id = Guid.NewGuid(),
+                    ManagerName = newSupplier.NameSupplier,
                     CompanyName = newSupplier.NameCompany,
-                    AccountName = newSupplier.NameCompany,
                     Email = newSupplier.Email,
                     Address = newSupplier.Address,
                     Phone = newSupplier.Phone,
@@ -51,6 +52,7 @@ namespace INVUIs.Suppliers
 
                 result = await SupplierService.AddSupplier(sup);
 
+               // await OnSave.InvokeAsync(sup);
                 success = "the supplier has been added successfully";
                 if (result.Successed)
                 {
@@ -62,19 +64,7 @@ namespace INVUIs.Suppliers
                 Console.WriteLine(ex.Message);
             }
         }
-
-        /*   private void ShowToast(string title, string message, ToastType type)
-           {
-               toastTitle = title;
-               toastMessage = message;
-               toastType = type;
-               isToastVisible = true;
-           }
-           public void CloseToast()
-           {
-               isToastVisible = false;
-           }*/
-        private async Task ClearForm()
+private async Task ClearForm()
         {
             newSupplier = new SupplierModel();
         }

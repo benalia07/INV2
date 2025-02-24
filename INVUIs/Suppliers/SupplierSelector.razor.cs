@@ -1,42 +1,44 @@
 ﻿using Microsoft.AspNetCore.Components;
 using INV.App.Suppliers;
-namespace INVUIs.Suppliers;
-
-public partial class SupplierSelector 
+using INV.Domain.Entities.SupplierEntity;
+namespace INVUIs.Suppliers
 {
-    [Parameter] public List<SupplierInfo> Supplier { get; set; }
-    [Parameter] public string Title { get; set; }
-    [Parameter] public EventCallback<SupplierInfo> OnSelected { get; set; }
-    public SupplierInfo SelectedSupplier = null;
-    private bool displayModal = false;
-    private string SearchTerm { get; set; } = "";
-
-    private List<SupplierInfo> displayedItems =>
-        Supplier?.Where(i => i.Name?.ToLower().Contains(SearchTerm?.ToLower() ?? string.Empty) == true ||
-                             i.Email?.ToString().ToLower().Contains(SearchTerm?.ToLower() ?? string.Empty) == true)
-            .ToList() ?? new List<SupplierInfo>();
-    private void close()
+    public partial class SupplierSelector 
     {
-        Supplier = null;
-        displayModal = false;
-        StateHasChanged();
-    }
+        [Parameter] public List<SupplierInfo> Supplier { get; set; }
+        [Parameter] public string Title { get; set; }
+        [Parameter] public EventCallback<SupplierInfo> OnSelected { get; set; }
+        public SupplierInfo SelectedSupplier = null;
+        private bool displayModal = false;
+        private string SearchTerm { get; set; } = "";
+        private bool isCreating = false;
+        private List<SupplierInfo> displayedItems =>
+            Supplier?.Where(i => i.Name?.ToLower().Contains(SearchTerm?.ToLower() ?? string.Empty) == true ||
+                                 i.Email?.ToString().ToLower().Contains(SearchTerm?.ToLower() ?? string.Empty) == true)
+                .ToList() ?? new List<SupplierInfo>();
+        private void close()
+        {
+            Supplier = null;
+            displayModal = false;
+            StateHasChanged();
+        }
 
-    private void selectItem(SupplierInfo selected)
-    {
-        OnSelected.InvokeAsync(selected);
-        close();
-    }
+        private void selectItem(SupplierInfo selected)
+        {
+            OnSelected.InvokeAsync(selected);
+            close();
+        }
 
-    public void ShowModal()
-    {
-        displayModal = true;
-        StateHasChanged();
-    }
+        public void ShowModal()
+        {
+            displayModal = true;
+            StateHasChanged();
+        }
 
-    public void ShowModal(List<SupplierInfo> Supplier)
-    {
-        Supplier = Supplier;
-        ShowModal();
+        public void ShowModal(List<SupplierInfo> Supplier)
+        {
+            Supplier = Supplier;
+            ShowModal();
+        }
     }
 }

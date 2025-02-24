@@ -1,10 +1,9 @@
-﻿using INV.Domain.Entities.PurchaseOrders;
+﻿using INV.Domain.Entities.Purchases;
 
 namespace INV.App.IOrderDetailServices
 {
     public interface IOrderDetailService
     {
-        Task<int> AddOrderDetail(OrderDetail orderDetail);
-        Task<List<OrderDetail>> GetAllOrderDetail();
+    
     }
 }
