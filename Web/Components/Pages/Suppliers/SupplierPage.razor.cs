@@ -1,6 +1,7 @@
 ﻿using INV.App.PurchaseOrders;
 using INV.App.Suppliers;
 using INV.Domain.Entities.SupplierEntity;
+using INV.Web.Services.Suppliers;
 using Microsoft.AspNetCore.Components;
 
 namespace INV.Web.Components.Pages.Suppliers
@@ -8,19 +9,21 @@ namespace INV.Web.Components.Pages.Suppliers
     public partial class SupplierPage
     {
         [Parameter] public Guid id { get; set; }
-        private Supplier Supplier { get; set; } = new();
+        private SupplierDetail Supplier { get; set; } 
         private List<PurchaseOrderInfo> purchases;
-        [Inject] public ISupplierService serviceSupplier { set; get; }
+        [Inject] public IAppSupplierService serviceSupplier { set; get; }
 
-        [Inject] public IPurchaseOrderService purchaseService { set; get; }
+       
 
         protected override async Task OnInitializedAsync()
         {
-            Supplier = await serviceSupplier.GetSupplierByID(id);
-
-            if (Supplier != null)
+            try
             {
-                purchases = await purchaseService.GetPurchaseOrdersByIdSupplier(id);
+                Supplier = await serviceSupplier.GetSupplierDetail(id);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
             }
         }
     }

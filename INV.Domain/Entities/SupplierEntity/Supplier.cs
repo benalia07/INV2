@@ -1,10 +1,26 @@
 ﻿using System.Security.Principal;
+using INV.Domain.Entities.Purchases;
 
 namespace INV.Domain.Entities.SupplierEntity
 
 {
-
-    public class Supplier
+    public interface ISupplier
+    {
+         Guid Id { set; get; }
+         string CompanyName { set; get; }
+         string ManagerName { get; set; }
+         string Address { set; get; }
+         string Phone { set; get; }
+         string Email { set; get; }
+         string RC { set; get; }
+         string NIS { set; get; }
+         string ART { set; get; }
+         string RIB { set; get; }
+         string NIF { set; get; }
+         string BankAgency { set; get; }
+         SupplierState State { set; get; }
+    }
+    public class Supplier : ISupplier
     {
         public Guid Id { set; get; }
         public string CompanyName { set; get; }
@@ -19,5 +35,6 @@ namespace INV.Domain.Entities.SupplierEntity
         public string NIF { set; get; }
         public string BankAgency { set; get; }
         public SupplierState State { set; get; }
+     
     }
 }

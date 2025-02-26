@@ -54,7 +54,7 @@ namespace INV.Implementation.Service.Suppliers
             }).ToList();
         }
 
-        public async Task<Supplier> GetSupplierByID(Guid id)
+        public async Task<ISupplier> GetSupplierByID(Guid id)
         {
             return await supplierstorage.SelectSupplierByID(id);
         }

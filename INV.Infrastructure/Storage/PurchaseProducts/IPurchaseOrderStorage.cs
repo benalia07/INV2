@@ -1,9 +1,7 @@
 ﻿using INV.App.PurchaseOrders;
-
 using INV.Domain.Entities.Purchases;
-using INV.Domain.Entities.SupplierEntity;
 
-namespace INV.Infrastructure.Storage.PurchaseOrders
+namespace INV.Infrastructure.Storage.PurchaseProducts
 {
     public interface IPurchaseOrderStorage
     {

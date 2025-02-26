@@ -3,7 +3,7 @@ using INV.Domain.Entities.Products;
 using INV.Domain.Entities.Purchases;
 using INV.Domain.Entities.SupplierEntity;
 using INV.Infrastructure.Storage.ProductsStorages;
-using INV.Infrastructure.Storage.PurchaseOrders;
+using INV.Infrastructure.Storage.PurchaseProducts;
 
 namespace INV.Implementation.Service.PurchseOrderServices
 {
@@ -60,8 +60,7 @@ namespace INV.Implementation.Service.PurchseOrderServices
 
         public async Task<PurchaseOrder> GetPurchaseOrdersByID(Guid id)
         {
-            if (id == null)
-                throw new ArgumentNullException(nameof(id));
+           
             return await purchaseOrderStorage.SelectPurchaseOrdersByID(id);
         }
 

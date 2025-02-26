@@ -8,8 +8,8 @@ namespace INVUIs.Suppliers
 {
     public partial class SupplierForm : ComponentBase
     {
-       // [Parameter]
-      //  public EventCallback<SupplierInfo> OnSave { get; set; }
+        [Parameter]
+        public EventCallback<SupplierInfo> OnSave { get; set; }
         [Inject] public ISupplierService SupplierService { get; set; }
         SupplierModel newSupplier = new SupplierModel();
         private bool displayModal = false;

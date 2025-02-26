@@ -1,4 +1,4 @@
-﻿namespace INVUIs.Models.PurchaseModels
+﻿namespace INVUIs.Purchases.PurchaseModels
 {
     public class PurchaseModel
     {

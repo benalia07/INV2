@@ -5,7 +5,7 @@ using INV.Domain.Entities.Purchases;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
-namespace INV.Infrastructure.Storage.PurchaseOrders
+namespace INV.Infrastructure.Storage.PurchaseProducts
 {
     public class PurchaseOrderStorage : IPurchaseOrderStorage
     {
@@ -23,8 +23,8 @@ namespace INV.Infrastructure.Storage.PurchaseOrders
         p.[Number],p.[Id],p.[SupplierId],s.CompanyName As CompanyName,p.[Date],p.[Status] FROM
         [purchase].[ORDERS] p left Join SUPPLIERS s ON p.SupplierId=s.Id  ";
 
-        private const string selectAllPurchaseOrderByIDSupplierQuery = @"SELECT * FROM [purchase].[ORDERS]
-        where SupplierId=@aSupplierId";
+        private const string selectAllPurchaseOrderByIdSupplierQuery = 
+            "SELECT * FROM purchase.GetListBySupplier(@aSupplierId)";
 
         private const string selectPurchaseProductsQuery = @" SELECT * FROM [purchase].[PRODUCTS]";
 
@@ -64,16 +64,19 @@ namespace INV.Infrastructure.Storage.PurchaseOrders
             };
         }
 
-        private static PurchaseOrderInfo getPurchaseOrdersInfoData(SqlDataReader reader) =>
-            new PurchaseOrderInfo
+        private static PurchaseOrderInfo getPurchaseOrdersInfoData(SqlDataReader reader)
+        {
+            var r =  new PurchaseOrderInfo
             {
                 Id = (Guid)reader["Id"],
                 SupplierId = (Guid)reader["SupplierId"],
                 Number = (int)reader["Number"],
-                Status = (PurchaseStatus) reader["Status"],
+                Status = (PurchaseStatus)reader["Status"],
                 SupplierName = (string)reader["CompanyName"],
                 Date = DateOnly.FromDateTime((DateTime)reader["Date"])
             };
+            return r;
+        }
 
         private static PurchaseProduct getPurchaseProductsData(SqlDataReader reader)
         {
@@ -188,13 +191,13 @@ namespace INV.Infrastructure.Storage.PurchaseOrders
         {
             var purchaseOrders = new List<PurchaseOrderInfo>();
 
-            using var sqlConnection = new SqlConnection(_connectionString);
-            var cmd = new SqlCommand(selectAllPurchaseOrderByIDSupplierQuery, sqlConnection);
+           await using var sqlConnection = new SqlConnection(_connectionString);
+           var cmd = new SqlCommand(selectAllPurchaseOrderByIdSupplierQuery, sqlConnection);
 
             cmd.Parameters.AddWithValue("@aSupplierId", supplierId);
 
-            await sqlConnection.OpenAsync();
-            using var reader = await cmd.ExecuteReaderAsync();
+            await sqlConnection.OpenAsync(); 
+            var reader = await cmd.ExecuteReaderAsync();
             while (await reader.ReadAsync())
             {
                 var purchaseOrder = getPurchaseOrdersInfoData(reader);

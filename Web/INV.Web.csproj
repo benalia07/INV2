@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Shared\INV.Shared\INV.Shared.csproj" />
+      <ProjectReference Include="..\INV.Shared\INV.Shared.csproj" />
       <ProjectReference Include="..\INV.App\INV.App.csproj" />
       <ProjectReference Include="..\INV.Domain\INV.Domain.csproj" />
       <ProjectReference Include="..\INV.Implementation\INV.Implementation.csproj" />

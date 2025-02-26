@@ -1,4 +1,5 @@
 ﻿using INV.App.PurchaseOrders;
+using INV.Shared;
 using Microsoft.AspNetCore.Components;
 
 namespace INV.Web.Components.Pages.Purchases
@@ -14,6 +15,6 @@ namespace INV.Web.Components.Pages.Purchases
             purchaseOrderInfos = await purchaseOrderService.GetPurchaseOrderInfo();
             purchaseOrderInfos = purchaseOrderInfos.OrderBy(s => s.Number).ToList();
         }
-        private void NavigateToPurchaseOrder() => navigationManager.NavigateTo("/order");
+        private void NavigateToPurchaseOrder() => navigationManager.NavigateTo($"{PageRoutes.CreatePurchase}");
     }
 }

@@ -35,7 +35,7 @@ namespace INV.Infrastructure.Storage.SupplierStorages
         private const string selectSupplierCountByIdQuery = "select count(*) from [dbo].[SUPPLIERS]  WHERE RC = @aRC";
         private static Supplier getSupplierData(SqlDataReader reader)
         {
-            return new Supplier
+            var r = new Supplier
             {
                 Id = (Guid)reader["Id"],
                 CompanyName = (string)reader["CompanyName"],
@@ -51,6 +51,7 @@ namespace INV.Infrastructure.Storage.SupplierStorages
                 BankAgency = (string)reader["BankAgency"],
                 State = (SupplierState)reader["Status"]
             };
+            return r;
         }
 
         public async Task<int> InsertSupplier(Supplier supplier)

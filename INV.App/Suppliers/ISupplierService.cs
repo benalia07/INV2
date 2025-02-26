@@ -8,7 +8,7 @@ namespace INV.App.Suppliers
         Task<Result> AddSupplier(Supplier supplier);
         Task<List<SupplierInfo>> GetAllSupplier();
         Task<List<SupplierInfo>> GetSupplierByName(string name);
-        Task <Supplier> GetSupplierByID(Guid id);
+        Task <ISupplier> GetSupplierByID(Guid id);
         Task<int> SetSupplier(Supplier supplier);
 
     }

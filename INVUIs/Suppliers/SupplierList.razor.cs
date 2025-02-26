@@ -1,4 +1,5 @@
 ﻿using INV.App.Suppliers;
+using INV.Shared;
 using Microsoft.AspNetCore.Components;
 
 namespace INVUIs.Suppliers
@@ -13,7 +14,7 @@ namespace INVUIs.Suppliers
         private string selectedLink(Guid id) => $"suppliers/{id}";
         private void NavigateToSupplierDetails(Guid supplierId)
         {
-            navigationManager.NavigateTo($"/r/{supplierId}");
+            navigationManager.NavigateTo($"/suppliers/{supplierId}");
         }
         protected override void OnParametersSet()
         {

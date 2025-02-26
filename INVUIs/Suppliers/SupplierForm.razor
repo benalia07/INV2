@@ -52,7 +52,7 @@
                         </div>
                         <div class="commend-input">
                             <label>Article number (ART)</label>
-                            <InputNumber @bind-Value="newSupplier.ART" placeholder="Enter ART"/>
+                            <InputText @bind-Value="newSupplier.ART" placeholder="Enter ART"/>
                             <ValidationMessage For="() => newSupplier.ART"/>
                         </div>
                     </div>
@@ -60,12 +60,12 @@
                     <div class="input2">
                         <div class="commend-input">
                             <label>NIF</label>
-                            <InputNumber @bind-Value="newSupplier.NIF" placeholder="Enter NIF"/>
+                            <InputText @bind-Value="newSupplier.NIF" placeholder="Enter NIF"/>
                             <ValidationMessage For="() => newSupplier.NIF"/>
                         </div>
                         <div class="commend-input">
                             <label>NIS</label>
-                            <InputNumber @bind-Value="newSupplier.NIS" placeholder="Enter NIS" />
+                            <InputText @bind-Value="newSupplier.NIS" placeholder="Enter NIS" />
                             <ValidationMessage For="() => newSupplier.NIS" />
                         </div>
                     </div>

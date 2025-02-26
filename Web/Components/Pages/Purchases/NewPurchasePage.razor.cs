@@ -3,9 +3,10 @@ using INV.App.PurchaseOrders;
 using INV.Domain.Entities.Products;
 using INV.Domain.Entities.Purchases;
 using INV.Domain.Entities.SupplierEntity;
-using INVUIs.Models.PurchaseModels;
+
 using INVUIs.Products.ProductsModel;
 using INVUIs.Purchases;
+using INVUIs.Purchases.PurchaseModels;
 using INVUIs.Suppliers.Models;
 using Microsoft.AspNetCore.Components;
 

@@ -140,3 +140,63 @@ C:\Users\Dali_Raki\Source\Repos\INVupdate\INV.Implementation\obj\Debug\net9.0\IN
 C:\Users\Dali_Raki\Source\Repos\INVupdate\INV.Implementation\obj\Debug\net9.0\refint\INV.Implementation.dll
 C:\Users\Dali_Raki\Source\Repos\INVupdate\INV.Implementation\obj\Debug\net9.0\INV.Implementation.pdb
 C:\Users\Dali_Raki\Source\Repos\INVupdate\INV.Implementation\obj\Debug\net9.0\ref\INV.Implementation.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.deps.json
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.pdb
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\bin\Debug\net9.0\INV.App.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\bin\Debug\net9.0\INV.Domain.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\bin\Debug\net9.0\INV.Infrastructure.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\bin\Debug\net9.0\INV.App.pdb
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\bin\Debug\net9.0\INV.Domain.pdb
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\bin\Debug\net9.0\INV.Infrastructure.pdb
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.csproj.AssemblyReference.cache
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.AssemblyInfoInputs.cache
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.AssemblyInfo.cs
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.csproj.CoreCompileInputs.cache
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.sourcelink.json
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\INV.Impl.1F5F8874.Up2Date
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\refint\INV.Implementation.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.pdb
+C:\Users\Dell G3\RiderProjects\INV2\INV.Implementation\obj\Debug\net9.0\ref\INV.Implementation.dll
+E:\INV2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.deps.json
+E:\INV2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.dll
+E:\INV2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.pdb
+E:\INV2\INV.Implementation\bin\Debug\net9.0\INV.App.dll
+E:\INV2\INV.Implementation\bin\Debug\net9.0\INV.Domain.dll
+E:\INV2\INV.Implementation\bin\Debug\net9.0\INV.Infrastructure.dll
+E:\INV2\INV.Implementation\bin\Debug\net9.0\INV.App.pdb
+E:\INV2\INV.Implementation\bin\Debug\net9.0\INV.Domain.pdb
+E:\INV2\INV.Implementation\bin\Debug\net9.0\INV.Infrastructure.pdb
+E:\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.csproj.AssemblyReference.cache
+E:\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.GeneratedMSBuildEditorConfig.editorconfig
+E:\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.AssemblyInfoInputs.cache
+E:\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.AssemblyInfo.cs
+E:\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.csproj.CoreCompileInputs.cache
+E:\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.sourcelink.json
+E:\INV2\INV.Implementation\obj\Debug\net9.0\INV.Impl.1F5F8874.Up2Date
+E:\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.dll
+E:\INV2\INV.Implementation\obj\Debug\net9.0\refint\INV.Implementation.dll
+E:\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.pdb
+E:\INV2\INV.Implementation\obj\Debug\net9.0\ref\INV.Implementation.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.deps.json
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.pdb
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\bin\Debug\net9.0\INV.App.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\bin\Debug\net9.0\INV.Domain.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\bin\Debug\net9.0\INV.Infrastructure.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\bin\Debug\net9.0\INV.App.pdb
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\bin\Debug\net9.0\INV.Domain.pdb
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\bin\Debug\net9.0\INV.Infrastructure.pdb
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.csproj.AssemblyReference.cache
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.AssemblyInfoInputs.cache
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.AssemblyInfo.cs
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.csproj.CoreCompileInputs.cache
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.sourcelink.json
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\INV.Impl.1F5F8874.Up2Date
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\refint\INV.Implementation.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.pdb
+C:\Users\Dali_Raki\Desktop\INV2\INV.Implementation\obj\Debug\net9.0\ref\INV.Implementation.dll

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace INVUIs.Models.PurchaseModels
+namespace INVUIs.Purchases.PurchaseModels
 {
     public class PurchaseValidateModel
     {

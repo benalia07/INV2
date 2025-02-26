@@ -1,0 +1,39 @@
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\bin\Debug\net9.0\INV.Shared.deps.json
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\bin\Debug\net9.0\INV.Shared.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\bin\Debug\net9.0\INV.Shared.pdb
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.AssemblyInfoInputs.cache
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.AssemblyInfo.cs
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.sourcelink.json
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\obj\Debug\net9.0\refint\INV.Shared.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.pdb
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\obj\Debug\net9.0\ref\INV.Shared.dll
+C:\Users\Dell G3\RiderProjects\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.csproj.AssemblyReference.cache
+E:\INV2\INV.Shared\bin\Debug\net9.0\INV.Shared.deps.json
+E:\INV2\INV.Shared\bin\Debug\net9.0\INV.Shared.dll
+E:\INV2\INV.Shared\bin\Debug\net9.0\INV.Shared.pdb
+E:\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.csproj.AssemblyReference.cache
+E:\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.AssemblyInfoInputs.cache
+E:\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.AssemblyInfo.cs
+E:\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.csproj.CoreCompileInputs.cache
+E:\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.sourcelink.json
+E:\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.dll
+E:\INV2\INV.Shared\obj\Debug\net9.0\refint\INV.Shared.dll
+E:\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.pdb
+E:\INV2\INV.Shared\obj\Debug\net9.0\ref\INV.Shared.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\bin\Debug\net9.0\INV.Shared.deps.json
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\bin\Debug\net9.0\INV.Shared.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\bin\Debug\net9.0\INV.Shared.pdb
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.csproj.AssemblyReference.cache
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.AssemblyInfoInputs.cache
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.AssemblyInfo.cs
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.sourcelink.json
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\obj\Debug\net9.0\refint\INV.Shared.dll
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\obj\Debug\net9.0\INV.Shared.pdb
+C:\Users\Dali_Raki\Desktop\INV2\INV.Shared\obj\Debug\net9.0\ref\INV.Shared.dll
