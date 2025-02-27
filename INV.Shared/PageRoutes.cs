@@ -7,5 +7,8 @@ public static class PageRoutes
     public const string Suppliers = "/suppliers";
     public const string SuppliersById = "/suppliers/{id:guid}";
     public const string purchaseById = "/purchases/{id:guid}";
+    
+    public const string Receptions = "/receptions";
+    public const string CreateReception = "/receptions/create";
 
 }

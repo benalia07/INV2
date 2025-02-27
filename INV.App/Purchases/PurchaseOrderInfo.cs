@@ -1,6 +1,6 @@
 ﻿using INV.Domain.Entities.Purchases;
 
-namespace INV.App.PurchaseOrders
+namespace INV.App.Purchases
 {
     public class PurchaseOrderInfo
     {

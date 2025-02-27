@@ -3,7 +3,7 @@ using INV.Domain.Entities.Products;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
-namespace INV.Infrastructure.Storage.ProductsStorages
+namespace INV.Infrastructure.Storage.Products
 {
     public class ProductStorage : IProductStorage
     {

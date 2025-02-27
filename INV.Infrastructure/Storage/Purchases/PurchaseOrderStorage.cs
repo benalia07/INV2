@@ -1,11 +1,11 @@
 ﻿using System.Data;
-using INV.App.PurchaseOrders;
+using INV.App.Purchases;
 using INV.Domain.Entities.Budget;
 using INV.Domain.Entities.Purchases;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
-namespace INV.Infrastructure.Storage.PurchaseProducts
+namespace INV.Infrastructure.Storage.Purchases
 {
     public class PurchaseOrderStorage : IPurchaseOrderStorage
     {
@@ -23,13 +23,15 @@ namespace INV.Infrastructure.Storage.PurchaseProducts
         p.[Number],p.[Id],p.[SupplierId],s.CompanyName As CompanyName,p.[Date],p.[Status] FROM
         [purchase].[ORDERS] p left Join SUPPLIERS s ON p.SupplierId=s.Id  ";
 
-        private const string selectAllPurchaseOrderByIdSupplierQuery = 
+        private const string selectAllPurchaseOrderByIdSupplierQuery =
             "SELECT * FROM purchase.GetListBySupplier(@aSupplierId)";
 
         private const string selectPurchaseProductsQuery = @" SELECT * FROM [purchase].[PRODUCTS]";
 
-        private const string selectPurchceOrderByIdQuery = @" SELECT * FROM [INV].[dbo].[PurchaseOrder] WHERE Id=@aId";
-
+        private const string selectPurchceOrderByIdQuery = @"
+    SELECT Id, Number, SupplierId, Date, BudgetArticle, BudgetType, ServiceType, TotalHT, TotalVA, TotalTC, CompletionDelay, VisaNumber, VisaDate, Status
+    FROM [INV].[purchase].[ORDERS]
+    WHERE Id = @aId";
         private const string insertOrderDetailCommand = @"
             INSERT INTO [purchase].[PRODUCTS] (PurchaseId, ProductId, Quantity, UnitPrice)
             VALUES (@aPurchaseId, @aProductId, @aQuantity, @aUnitPrice)";
@@ -47,26 +49,26 @@ namespace INV.Infrastructure.Storage.PurchaseProducts
         {
             return new PurchaseOrder
             {
-                Id = (Guid)reader["Id"],
-                Number = reader.GetInt16("Number"),
-                SupplierId = (Guid)reader["SupplierId"],
+                Id = reader.GetGuid(reader.GetOrdinal("Id")),
+                Number = reader.GetInt32(reader.GetOrdinal("Number")),
+                SupplierId = reader.GetGuid(reader.GetOrdinal("SupplierId")),
                 Date = DateOnly.FromDateTime((DateTime)reader["Date"]),
-                BudgeArticle = reader.GetString("BudgetArticle"),
-                BudgeType = (BudgeType)reader.GetInt16("BudgetType"),
-                ServiceType = (ServiceType)reader.GetInt16("ServiceType"),
+                BudgeArticle = reader.GetString(reader.GetOrdinal("BudgetArticle")),
+                BudgeType = (BudgeType)reader.GetInt32("BudgetType"),
+                ServiceType = (ServiceType)reader.GetInt32(reader.GetOrdinal("ServiceType")),
                 TotalHT = (decimal)reader["TotalHT"],
                 TotalTVA = (decimal)reader["TotalVA"],
                 TotalTTC = (decimal)reader["TotalTC"],
-                CompletionDelay = (int)reader["CompletionDelay"],
-                VisaNumber = (string)reader["VisaNumber"],
-                VisaDate = DateOnly.FromDateTime((DateTime)reader["VisaDate"]),
-                Status = (PurchaseStatus)reader["State"]
+                CompletionDelay = reader.GetInt32(reader.GetOrdinal("CompletionDelay")),
+                VisaNumber = reader.IsDBNull(reader.GetOrdinal("VisaNumber")) ? null : reader.GetString(reader.GetOrdinal("VisaNumber")),
+                VisaDate = reader.IsDBNull(reader.GetOrdinal("VisaDate")) ? null : DateOnly.FromDateTime((DateTime)reader["VisaDate"]),
+                Status = (PurchaseStatus)reader.GetInt32(reader.GetOrdinal("Status"))
             };
         }
 
         private static PurchaseOrderInfo getPurchaseOrdersInfoData(SqlDataReader reader)
         {
-            var r =  new PurchaseOrderInfo
+            var r = new PurchaseOrderInfo
             {
                 Id = (Guid)reader["Id"],
                 SupplierId = (Guid)reader["SupplierId"],
@@ -191,12 +193,12 @@ namespace INV.Infrastructure.Storage.PurchaseProducts
         {
             var purchaseOrders = new List<PurchaseOrderInfo>();
 
-           await using var sqlConnection = new SqlConnection(_connectionString);
-           var cmd = new SqlCommand(selectAllPurchaseOrderByIdSupplierQuery, sqlConnection);
+            await using var sqlConnection = new SqlConnection(_connectionString);
+            var cmd = new SqlCommand(selectAllPurchaseOrderByIdSupplierQuery, sqlConnection);
 
             cmd.Parameters.AddWithValue("@aSupplierId", supplierId);
 
-            await sqlConnection.OpenAsync(); 
+            await sqlConnection.OpenAsync();
             var reader = await cmd.ExecuteReaderAsync();
             while (await reader.ReadAsync())
             {
@@ -218,6 +220,11 @@ namespace INV.Infrastructure.Storage.PurchaseProducts
             cmd.Parameters.AddWithValue("@aVisaDate", purchaseOrder.VisaDate);
             cmd.Parameters.AddWithValue("@aStatus", PurchaseStatus.Validated.ToString());
             return await cmd.ExecuteNonQueryAsync();
+        }
+
+        public ValueTask<List<PurchaseOrderInfo>> SelectPurchasesForReceiptCreation()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using INV.App.PurchaseOrders;
+﻿using INV.App.Purchases;
 using INV.App.Suppliers;
 using INV.Domain.Entities.SupplierEntity;
 using INV.Web.Services.Suppliers;

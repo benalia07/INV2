@@ -1,0 +1,30 @@
+﻿@page "/reception/{Id:guid}"
+@using INV.App.Purchases
+
+@using INV.App.Receipts
+@using INV.Domain.Entities.Purchases
+@using INV.Domain.Entities.Receptions
+@using INV.Domain.Shared
+
+<NewReception purchaseOrderInfos="listpurchasesinfo" detailspurchase="detailspurchase" tabreceptions="tabreceptions" />
+
+@code {
+	[Inject]
+	public IPurchaseOrderService PurchaseOrderService { get; set; }
+	[Inject]
+	public IReceiptService ReceptionService { get; set; }
+	public Result result;
+	[Parameter] public Guid Id { get; set; }
+	public List<PurchaseOrderInfo> listpurchasesinfo;
+	public PurchaseOrder detailspurchase;
+	public List<TabReception> tabreceptions;
+	protected override async Task OnInitializedAsync()
+	{
+		listpurchasesinfo = await PurchaseOrderService.GetPurchaseOrderInfo();
+
+		result = await ReceptionService.CreateReceiptFromPurchase(Id);
+
+		detailspurchase = await PurchaseOrderService.GetPurchaseOrdersByID(Id);
+		//tabreceptions = await ReceptionService.GetPurchaseOrdersByID(Id);
+	}
+}

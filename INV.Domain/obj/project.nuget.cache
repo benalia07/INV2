@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QnbtKnFtnEE=",
+  "dgSpecHash": "W2QW8OTwSUA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dali_Raki\\Desktop\\INV2\\INV.Domain\\INV.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INV_NEXT_Step\\INV.Domain\\INV.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dali_Raki\\.nuget\\packages\\blazor.bootstrap\\3.3.1\\blazor.bootstrap.3.3.1.nupkg.sha512",
     "C:\\Users\\Dali_Raki\\.nuget\\packages\\bootstrapblazor\\9.2.1\\bootstrapblazor.9.2.1.nupkg.sha512",

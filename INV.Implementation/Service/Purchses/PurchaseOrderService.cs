@@ -1,11 +1,11 @@
-﻿using INV.App.PurchaseOrders;
+﻿using INV.App.Purchases;
 using INV.Domain.Entities.Products;
 using INV.Domain.Entities.Purchases;
 using INV.Domain.Entities.SupplierEntity;
-using INV.Infrastructure.Storage.ProductsStorages;
-using INV.Infrastructure.Storage.PurchaseProducts;
+using INV.Infrastructure.Storage.Products;
+using INV.Infrastructure.Storage.Purchases;
 
-namespace INV.Implementation.Service.PurchseOrderServices
+namespace INV.Implementation.Service.Purchses
 {
     public class PurchaseOrderService : IPurchaseOrderService
     {
@@ -27,7 +27,7 @@ namespace INV.Implementation.Service.PurchseOrderServices
             return 1;
         }
 
-     
+
 
         public async Task<List<PurchaseOrder>> GetPurchaseOrdersByDate(DateOnly dateOnly)
         {
@@ -41,7 +41,7 @@ namespace INV.Implementation.Service.PurchseOrderServices
         {
             try
             {
-                IAsyncEnumerable<PurchaseOrderInfo> result =  purchaseOrderStorage.SelectPurchaseOrderInfo();
+                IAsyncEnumerable<PurchaseOrderInfo> result = purchaseOrderStorage.SelectPurchaseOrderInfo();
                 return await result.ToListAsync();
             }
             catch (Exception e)
@@ -60,7 +60,7 @@ namespace INV.Implementation.Service.PurchseOrderServices
 
         public async Task<PurchaseOrder> GetPurchaseOrdersByID(Guid id)
         {
-           
+
             return await purchaseOrderStorage.SelectPurchaseOrdersByID(id);
         }
 
@@ -80,6 +80,11 @@ namespace INV.Implementation.Service.PurchseOrderServices
             {
                 await productStorage.InsertProduct(product);
             }
+        }
+
+        public ValueTask<List<PurchaseOrderInfo>> GetPurchasesForReceiptCreation()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using INV.Domain.Entities.Products;
 using INV.Domain.Entities.Purchases;
 
-namespace INV.App.PurchaseOrders
+namespace INV.App.Purchases
 {
     public interface IPurchaseOrderService
     {
@@ -18,5 +18,6 @@ namespace INV.App.PurchaseOrders
         Task<int> ValicatePurchaseOrder(PurchaseOrder purchaseOrder);
 
         Task CreatePurchaseOrder(PurchaseOrder purchaseOrder, List<Product> products);
+        ValueTask<List<PurchaseOrderInfo>> GetPurchasesForReceiptCreation();
     }
 }

@@ -1,0 +1,12 @@
+﻿@page "/receptions2"
+@using INV.Domain.Entities.Receptions
+
+<PageHeader Title="List of Receptions" />
+
+<ReceptionList receptions="Receptions">
+    <Pills>
+        <button type="button" class="addsupplier-button" @onclick="NavigateToCreateReception"><i class="bi bi-cart-plus"></i> Add Reception</button>
+    </Pills>
+</ReceptionList>
+
+

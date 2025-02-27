@@ -1,4 +1,5 @@
-﻿using INV.App.Suppliers;
+﻿using System.Runtime.InteropServices.JavaScript;
+using INV.App.Suppliers;
 using INV.Domain.Entities.SupplierEntity;
 using INV.Domain.Shared;
 using INV.Infrastructure.Storage.SupplierStorages;
@@ -19,23 +20,18 @@ namespace INV.Implementation.Service.Suppliers
         {
             try
             {
-                List<ErrorCode> errorList = validateSupplierCreate(supplier);
+                List<Error> errorList = await validateSupplierCreate(supplier);
+
+
                 if (errorList.Any())
                     return Result.Failure(errorList);
-                bool RcExsist = await supplierstorage.SupplierExistsByRC(supplier.RC);
-                errorList.Clear();
-                if (RcExsist)
-                    errorList.Add(SupplierError.RCExsist);
-                if (errorList.Any())
-                    return Result.Failure(errorList);
-            
+
                 await supplierstorage.InsertSupplier(supplier);
-                return Result.Succes;
+                return Result.Success();
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                throw;
+                return Result.Failure(Error.Exception(e));
             }
         }
 
@@ -84,12 +80,23 @@ namespace INV.Implementation.Service.Suppliers
             return await supplierstorage.UpdateSupplier(supplier);
         }
 
-        private List<ErrorCode> validateSupplierCreate(Supplier supplier)
+        private async Task<List<Error>> validateSupplierCreate(Supplier supplier)
         {
-            List<ErrorCode> errors = new List<ErrorCode>();
+            List<Error> errors = new List<Error>();
 
-            if (string.IsNullOrWhiteSpace(supplier.CompanyName))
-                errors.Add(SupplierError.RCExsist);
+
+
+            bool rcExists = await supplierstorage.SupplierExistsByRC(supplier.RC);
+            if (rcExists)
+                errors.Add(SupplierError.RCExsist(supplier.RC));
+
+            bool nisExists = await supplierstorage.SupplierExistsByNIS(supplier.NIS);
+            if (nisExists)
+                errors.Add(SupplierError.NISExsist);
+            bool ribExists = await supplierstorage.SupplierExistsByRIB(supplier.RIB);
+            if (ribExists)
+                errors.Add(SupplierError.RIBExsist);
+
             return errors;
         }
     }

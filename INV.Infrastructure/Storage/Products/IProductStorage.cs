@@ -1,6 +1,6 @@
 ﻿using INV.Domain.Entities.Products;
 
-namespace INV.Infrastructure.Storage.ProductsStorages
+namespace INV.Infrastructure.Storage.Products
 {
     public interface IProductStorage
     {

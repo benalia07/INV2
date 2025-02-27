@@ -83,9 +83,9 @@
                             <ValidationMessage For="() => newSupplier.BankAgency" />
                         </div>
                     </div>
-                    @if (@result != null) { @if (@result.ErrorCodes is not null) { <div class="D-eroor-text">@foreach (var error in result.ErrorCodes) { <span> @error.Message !</span> }</div> }
+                  @*   @if (@result != null) { @if (@result.ErrorCodes is not null) { <div class="D-eroor-text">@foreach (var error in result.ErrorCodes) { <span> @error.Message !</span> }</div> }
                     @if (@result.Successed) { <div class="D-success-text">"Laboratory is Created"</div>} }
-                    <div class="footer-form">
+                   *@  <div class="footer-form">
                         <button class="btn-custom btn-cancel" type="button" @onclick="close">Close</button>
                         <button class="btn-custom btn-submit" type="submit">Create</button>
                         

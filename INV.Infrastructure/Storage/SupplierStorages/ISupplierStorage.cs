@@ -9,6 +9,7 @@ namespace INV.Infrastructure.Storage.SupplierStorages
         Task<Supplier> SelectSupplierByID(Guid id);
         Task<int> UpdateSupplier(Supplier supplier);
         Task<bool> SupplierExistsByRC(string rc);
+        Task<bool> SupplierExistsByNIS(string nis);
+        Task<bool> SupplierExistsByRIB(string rib);
     }
 }
-

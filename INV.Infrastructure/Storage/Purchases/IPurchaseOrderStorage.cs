@@ -1,7 +1,7 @@
-﻿using INV.App.PurchaseOrders;
+﻿using INV.App.Purchases;
 using INV.Domain.Entities.Purchases;
 
-namespace INV.Infrastructure.Storage.PurchaseProducts
+namespace INV.Infrastructure.Storage.Purchases
 {
     public interface IPurchaseOrderStorage
     {
@@ -15,6 +15,6 @@ namespace INV.Infrastructure.Storage.PurchaseProducts
 
         Task<PurchaseOrder> SelectPurchaseOrdersByID(Guid id);
         Task<int> ValidatePurchase(PurchaseOrder purchaseOrder);
-
+        ValueTask<List<PurchaseOrderInfo>> SelectPurchasesForReceiptCreation();
     }
 }

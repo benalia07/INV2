@@ -529,11 +529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dali_Raki\\Desktop\\INV2\\INV.Shared\\INV.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\Dali_Raki\\Source\\Repos\\INV_NEXT_Step\\INV.Shared\\INV.Shared.csproj",
       "projectName": "INV.Shared",
-      "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\INV2\\INV.Shared\\INV.Shared.csproj",
+      "projectPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INV_NEXT_Step\\INV.Shared\\INV.Shared.csproj",
       "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dali_Raki\\Desktop\\INV2\\INV.Shared\\obj\\",
+      "outputPath": "C:\\Users\\Dali_Raki\\Source\\Repos\\INV_NEXT_Step\\INV.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

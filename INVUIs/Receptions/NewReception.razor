@@ -1,0 +1,164 @@
+@using INV.App.Purchases
+@using INV.Domain.Entities.Purchases
+@using INV.Domain.Entities.Receptions
+@rendermode InteractiveServer
+
+
+@if (detailspurchase != null)
+{
+    <div class="details-container">
+        <p class="detail-number">@detailspurchase.Number</p>
+        <p class="detail-budget">@detailspurchase.BudgeArticle</p>
+        <p class="detail-delay">@detailspurchase.CompletionDelay</p>
+        <p class="detail-service">@detailspurchase.ServiceType</p>
+    </div>
+}
+
+@if (tabreceptions != null)
+{
+    <div class="table-container">
+        <table class="reception-table">
+            <thead>
+                <tr>
+                    <th>Designation</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Received</th>
+                    <th>Rest</th>
+                    <th>New Received</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var tabreception in tabreceptions)
+                {
+                    <tr>
+                        <td>@tabreception.Designation</td>
+                        <td>@tabreception.UnitPrice</td>
+                        <td>@tabreception.Quantity</td>
+                        <td>@tabreception.Received</td>
+                        <td>@(tabreception.Quantity - tabreception.Received)</td>
+                        <td>
+                            <input class="input-received" type="number" @bind="newreceived" />
+                        </td>
+                        <td>
+                            <button class="save-button" @onclick="() => save(tabreception.PurchaseId, tabreception.ProductId, newreceived)">
+                                Save Change
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+  
+<style>
+
+    /* Select Dropdown */
+    .purchase-select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #257180;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #257180;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .purchase-select:hover,
+        .purchase-select:focus {
+            border-color: #FD8B51;
+            outline: none;
+        }
+
+    /* Details Container */
+    .details-container {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 15px;
+    }
+
+    .detail-number,
+    .detail-budget,
+    .detail-delay,
+    .detail-service {
+        margin: 5px 0;
+        font-size: 16px;
+        color: #257180;
+    }
+
+    /* Table Container */
+    .table-container {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        overflow-x: auto;
+    }
+
+    /* Table */
+    .reception-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .reception-table th,
+        .reception-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .reception-table th {
+            background-color: #257180;
+            color: white;
+        }
+
+        .reception-table tr:nth-child(even) {
+            background-color: #F2E5BF;
+        }
+
+        .reception-table tr:hover {
+            background-color: #FD8B51;
+            color: white;
+        }
+
+    /* Input Field */
+    .input-received {
+        width: 80px;
+        padding: 5px;
+        border: 2px solid #257180;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+        .input-received:focus {
+            outline: none;
+            border-color: #FD8B51;
+        }
+
+    /* Button */
+    .save-button {
+        background-color: #257180;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .save-button:hover {
+            background-color: #FD8B51;
+        }
+
+</style>
+
+

@@ -1,4 +1,4 @@
-﻿using INV.App.PurchaseOrders;
+﻿using INV.App.Purchases;
 using INV.Shared;
 using Microsoft.AspNetCore.Components;
 

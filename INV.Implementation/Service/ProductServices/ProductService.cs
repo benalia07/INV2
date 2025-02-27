@@ -1,6 +1,6 @@
 ﻿using INV.App.Products;
 using INV.Domain.Entities.Products;
-using INV.Infrastructure.Storage.ProductsStorages;
+using INV.Infrastructure.Storage.Products;
 
 namespace INV.Implementation.Service.ProductServices
 {

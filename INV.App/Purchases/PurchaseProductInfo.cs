@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace INV.App.PurchaseOrders
+namespace INV.App.Purchases
 {
     public class PurchaseProductInfo
     {
-        public Guid ProductId {      get; set; }
+        public Guid ProductId { get; set; }
         public string ProductName { get; set; }
         public string ProductMU { get; set; }
         public int TVA { get; set; }

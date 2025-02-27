@@ -54,10 +54,11 @@ namespace INVUIs.Suppliers
 
                // await OnSave.InvokeAsync(sup);
                 success = "the supplier has been added successfully";
-                if (result.Successed)
+              /*  if (result.IsSuccess)
                 {
-                    await ClearForm();
-                }
+                    
+                }*/
+                await ClearForm();
             }
             catch (Exception ex)
             {

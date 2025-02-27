@@ -1,5 +1,5 @@
 ﻿using INV.App.Products;
-using INV.App.PurchaseOrders;
+using INV.App.Purchases;
 using INV.Domain.Entities.Products;
 using INV.Domain.Entities.Purchases;
 using INV.Domain.Entities.SupplierEntity;
