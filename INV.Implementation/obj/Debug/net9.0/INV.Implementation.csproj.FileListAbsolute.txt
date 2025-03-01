@@ -220,3 +220,23 @@ C:\Users\Dali_Raki\Source\Repos\INV_NEXT_Step\INV.Implementation\bin\Debug\net9.
 C:\Users\Dali_Raki\Source\Repos\INV_NEXT_Step\INV.Implementation\bin\Debug\net9.0\INV.Infrastructure.pdb
 C:\Users\Dali_Raki\Source\Repos\INV_NEXT_Step\INV.Implementation\obj\Debug\net9.0\INV.Impl.1F5F8874.Up2Date
 C:\Users\Dali_Raki\Source\Repos\INV_NEXT_Step\INV.Implementation\obj\Debug\net9.0\ref\INV.Implementation.dll
+C:\Users\Dell G3\Source\Repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.dll
+C:\Users\Dell G3\Source\Repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\refint\INV.Implementation.dll
+C:\Users\Dell G3\Source\Repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.pdb
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.deps.json
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.dll
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\bin\Debug\net9.0\INV.Implementation.pdb
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\bin\Debug\net9.0\INV.App.dll
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\bin\Debug\net9.0\INV.Domain.dll
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\bin\Debug\net9.0\INV.Infrastructure.dll
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\bin\Debug\net9.0\INV.App.pdb
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\bin\Debug\net9.0\INV.Domain.pdb
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\bin\Debug\net9.0\INV.Infrastructure.pdb
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.csproj.AssemblyReference.cache
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.AssemblyInfoInputs.cache
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.AssemblyInfo.cs
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.csproj.CoreCompileInputs.cache
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\INV.Implementation.sourcelink.json
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\INV.Impl.1F5F8874.Up2Date
+C:\Users\Dell G3\source\repos\INV_NEXT_Step2\INV.Implementation\obj\Debug\net9.0\ref\INV.Implementation.dll

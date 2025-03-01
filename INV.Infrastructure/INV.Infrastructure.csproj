@@ -28,4 +28,10 @@
       </Reference>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="generator.tt">
+        <Generator>TextTemplatingFileGenerator</Generator>
+      </None>
+    </ItemGroup>
+
 </Project>

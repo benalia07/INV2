@@ -1,61 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\",
+  "WorkspaceRootPath": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AB83862-F6EF-4941-BA4D-C266AFB3447B}|INV.Implementation\\INV.Implementation.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\inv.implementation\\service\\receipts\\receiptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|solutionrelative:web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AB83862-F6EF-4941-BA4D-C266AFB3447B}|INV.Implementation\\INV.Implementation.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\inv.implementation\\service\\receipts\\receiptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AB83862-F6EF-4941-BA4D-C266AFB3447B}|INV.Implementation\\INV.Implementation.csproj|solutionrelative:inv.implementation\\service\\receipts\\receiptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\invuis\\receptions\\receptionselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\invuis\\receptions\\receptionselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|solutionrelative:invuis\\receptions\\receptionselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\invuis\\receptions\\receptionlist.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\invuis\\receptions\\receptionlist.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|solutionrelative:invuis\\receptions\\receptionlist.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6905ACD5-6E5D-44C1-937C-3F57DD6E1ED8}|INV.Domain\\INV.Domain.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\inv.domain\\shared\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6905ACD5-6E5D-44C1-937C-3F57DD6E1ED8}|INV.Domain\\INV.Domain.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\inv.domain\\shared\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6905ACD5-6E5D-44C1-937C-3F57DD6E1ED8}|INV.Domain\\INV.Domain.csproj|solutionrelative:inv.domain\\shared\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\invuis\\receptions\\newreception.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\invuis\\receptions\\newreception.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|solutionrelative:invuis\\receptions\\newreception.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58227CE6-8621-4565-BD75-4AF665172459}|INV.Infrastructure\\INV.Infrastructure.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\inv.infrastructure\\storage\\receipts\\receiptstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58227CE6-8621-4565-BD75-4AF665172459}|INV.Infrastructure\\INV.Infrastructure.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\inv.infrastructure\\storage\\receipts\\receiptstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58227CE6-8621-4565-BD75-4AF665172459}|INV.Infrastructure\\INV.Infrastructure.csproj|solutionrelative:inv.infrastructure\\storage\\receipts\\receiptstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\invuis\\receptions\\receptionlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\invuis\\receptions\\receptionlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|solutionrelative:invuis\\receptions\\receptionlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\web\\components\\pages\\receipts\\receiptpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\web\\components\\pages\\receipts\\receiptpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|solutionrelative:web\\components\\pages\\receipts\\receiptpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\web\\components\\pages\\receipts\\receiptlistpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\web\\components\\pages\\receipts\\receiptlistpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|solutionrelative:web\\components\\pages\\receipts\\receiptlistpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\web\\components\\pages\\receptions\\newreceptionpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\web\\components\\pages\\receptions\\newreceptionpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|solutionrelative:web\\components\\pages\\receptions\\newreceptionpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\invuis\\receptions\\newreception.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\invuis\\receptions\\newreception.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2CA4533B-949D-4985-96A2-627900575F4F}|INVUIs\\INVUIs.csproj|solutionrelative:invuis\\receptions\\newreception.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\web\\components\\pages\\receptions\\receptionlistpage.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\web\\components\\pages\\receptions\\receptionlistpage.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|solutionrelative:web\\components\\pages\\receptions\\receptionlistpage.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dali_raki\\source\\repos\\inv_next_step\\web\\components\\pages\\receptions\\receptionlistpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|c:\\users\\dell g3\\source\\repos\\inv_next_step2\\web\\components\\pages\\receptions\\receptionlistpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C4A70422-573D-4D8A-81A1-9923CD3A5846}|Web\\INV.Web.csproj|solutionrelative:web\\components\\pages\\receptions\\receptionlistpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -66,11 +66,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
@@ -82,6 +98,10 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
@@ -89,77 +109,25 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INV.Domain\\Shared\\Result.cs",
-              "RelativeDocumentMoniker": "INV.Domain\\Shared\\Result.cs",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INV.Domain\\Shared\\Result.cs",
-              "RelativeToolTip": "INV.Domain\\Shared\\Result.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAcwEMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T13:39:41.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReceptionList.razor.cs",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INVUIs\\Receptions\\ReceptionList.razor.cs",
-              "RelativeDocumentMoniker": "INVUIs\\Receptions\\ReceptionList.razor.cs",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INVUIs\\Receptions\\ReceptionList.razor.cs",
-              "RelativeToolTip": "INVUIs\\Receptions\\ReceptionList.razor.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T13:31:03.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReceptionSelector.razor",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INVUIs\\Receptions\\ReceptionSelector.razor",
-              "RelativeDocumentMoniker": "INVUIs\\Receptions\\ReceptionSelector.razor",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INVUIs\\Receptions\\ReceptionSelector.razor",
-              "RelativeToolTip": "INVUIs\\Receptions\\ReceptionSelector.razor",
-              "ViewState": "AgIAACsAAAAAAAAAAAAuwEAAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T13:25:31.902Z",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\appsettings.json",
+              "RelativeToolTip": "Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-27T14:25:43.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReceptionList.razor",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INVUIs\\Receptions\\ReceptionList.razor",
-              "RelativeDocumentMoniker": "INVUIs\\Receptions\\ReceptionList.razor",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INVUIs\\Receptions\\ReceptionList.razor",
-              "RelativeToolTip": "INVUIs\\Receptions\\ReceptionList.razor",
-              "ViewState": "AgIAACAAAAAAAAAAAAApwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T13:25:28.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReceiptListPage.razor",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Components\\Pages\\Receipts\\ReceiptListPage.razor",
-              "RelativeDocumentMoniker": "Web\\Components\\Pages\\Receipts\\ReceiptListPage.razor",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Components\\Pages\\Receipts\\ReceiptListPage.razor",
-              "RelativeToolTip": "Web\\Components\\Pages\\Receipts\\ReceiptListPage.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T13:24:40.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "NewReceptionPage.razor",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Components\\Pages\\Receptions\\NewReceptionPage.razor",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\Components\\Pages\\Receptions\\NewReceptionPage.razor",
               "RelativeDocumentMoniker": "Web\\Components\\Pages\\Receptions\\NewReceptionPage.razor",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Components\\Pages\\Receptions\\NewReceptionPage.razor",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\Components\\Pages\\Receptions\\NewReceptionPage.razor",
               "RelativeToolTip": "Web\\Components\\Pages\\Receptions\\NewReceptionPage.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -167,11 +135,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ReceiptPage.razor",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Components\\Pages\\Receipts\\ReceiptPage.razor",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\Components\\Pages\\Receipts\\ReceiptPage.razor",
               "RelativeDocumentMoniker": "Web\\Components\\Pages\\Receipts\\ReceiptPage.razor",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Components\\Pages\\Receipts\\ReceiptPage.razor",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\Components\\Pages\\Receipts\\ReceiptPage.razor",
               "RelativeToolTip": "Web\\Components\\Pages\\Receipts\\ReceiptPage.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -179,11 +147,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ReceiptStorage.cs",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INV.Infrastructure\\Storage\\Receipts\\ReceiptStorage.cs",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INV.Infrastructure\\Storage\\Receipts\\ReceiptStorage.cs",
               "RelativeDocumentMoniker": "INV.Infrastructure\\Storage\\Receipts\\ReceiptStorage.cs",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INV.Infrastructure\\Storage\\Receipts\\ReceiptStorage.cs",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INV.Infrastructure\\Storage\\Receipts\\ReceiptStorage.cs",
               "RelativeToolTip": "INV.Infrastructure\\Storage\\Receipts\\ReceiptStorage.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -193,9 +161,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "NewReception.razor",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INVUIs\\Receptions\\NewReception.razor",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INVUIs\\Receptions\\NewReception.razor",
               "RelativeDocumentMoniker": "INVUIs\\Receptions\\NewReception.razor",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INVUIs\\Receptions\\NewReception.razor",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INVUIs\\Receptions\\NewReception.razor",
               "RelativeToolTip": "INVUIs\\Receptions\\NewReception.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -203,11 +171,89 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReceiptService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INV.Implementation\\Service\\Receipts\\ReceiptService.cs",
+              "RelativeDocumentMoniker": "INV.Implementation\\Service\\Receipts\\ReceiptService.cs",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INV.Implementation\\Service\\Receipts\\ReceiptService.cs",
+              "RelativeToolTip": "INV.Implementation\\Service\\Receipts\\ReceiptService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAewBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T13:07:33.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReceiptListPage.razor",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\Components\\Pages\\Receipts\\ReceiptListPage.razor",
+              "RelativeDocumentMoniker": "Web\\Components\\Pages\\Receipts\\ReceiptListPage.razor",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\Components\\Pages\\Receipts\\ReceiptListPage.razor",
+              "RelativeToolTip": "Web\\Components\\Pages\\Receipts\\ReceiptListPage.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T13:24:40.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReceptionList.razor",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INVUIs\\Receptions\\ReceptionList.razor",
+              "RelativeDocumentMoniker": "INVUIs\\Receptions\\ReceptionList.razor",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INVUIs\\Receptions\\ReceptionList.razor",
+              "RelativeToolTip": "INVUIs\\Receptions\\ReceptionList.razor",
+              "ViewState": "AgIAACAAAAAAAAAAAAApwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T13:25:28.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReceptionSelector.razor",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INVUIs\\Receptions\\ReceptionSelector.razor",
+              "RelativeDocumentMoniker": "INVUIs\\Receptions\\ReceptionSelector.razor",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INVUIs\\Receptions\\ReceptionSelector.razor",
+              "RelativeToolTip": "INVUIs\\Receptions\\ReceptionSelector.razor",
+              "ViewState": "AgIAACsAAAAAAAAAAAAuwEAAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T13:25:31.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReceptionList.razor.cs",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INVUIs\\Receptions\\ReceptionList.razor.cs",
+              "RelativeDocumentMoniker": "INVUIs\\Receptions\\ReceptionList.razor.cs",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INVUIs\\Receptions\\ReceptionList.razor.cs",
+              "RelativeToolTip": "INVUIs\\Receptions\\ReceptionList.razor.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T13:31:03.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INV.Domain\\Shared\\Result.cs",
+              "RelativeDocumentMoniker": "INV.Domain\\Shared\\Result.cs",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INV.Domain\\Shared\\Result.cs",
+              "RelativeToolTip": "INV.Domain\\Shared\\Result.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T13:39:41.734Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
               "Title": "ReceptionListPage.razor.cs",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor.cs",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor.cs",
               "RelativeDocumentMoniker": "Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor.cs",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor.cs",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor.cs",
               "RelativeToolTip": "Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -217,9 +263,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "ReceptionListPage.razor",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor",
               "RelativeDocumentMoniker": "Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor",
               "RelativeToolTip": "Web\\Components\\Pages\\Receptions\\ReceptionListPage.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -227,40 +273,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "NewReception.razor.cs",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INVUIs\\Receptions\\NewReception.razor.cs",
+              "DocumentMoniker": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INVUIs\\Receptions\\NewReception.razor.cs",
               "RelativeDocumentMoniker": "INVUIs\\Receptions\\NewReception.razor.cs",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INVUIs\\Receptions\\NewReception.razor.cs",
+              "ToolTip": "C:\\Users\\Dell G3\\source\\repos\\INV_NEXT_Step2\\INVUIs\\Receptions\\NewReception.razor.cs",
               "RelativeToolTip": "INVUIs\\Receptions\\NewReception.razor.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAmwBUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T13:11:09.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReceiptService.cs",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INV.Implementation\\Service\\Receipts\\ReceiptService.cs",
-              "RelativeDocumentMoniker": "INV.Implementation\\Service\\Receipts\\ReceiptService.cs",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\INV.Implementation\\Service\\Receipts\\ReceiptService.cs",
-              "RelativeToolTip": "INV.Implementation\\Service\\Receipts\\ReceiptService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAewBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T13:07:33.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Program.cs",
-              "RelativeDocumentMoniker": "Web\\Program.cs",
-              "ToolTip": "C:\\Users\\Dali_Raki\\source\\repos\\INV_NEXT_Step\\Web\\Program.cs",
-              "RelativeToolTip": "Web\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAADgvw8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T13:06:56.167Z"
             }
           ]
         },
@@ -270,11 +291,11 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             }
           ]
         }

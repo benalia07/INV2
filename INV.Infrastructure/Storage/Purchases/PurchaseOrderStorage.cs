@@ -45,6 +45,8 @@ namespace INV.Infrastructure.Storage.Purchases
         private const string validatePurchaseCommand =
             @" UPDATE purchase.ORDERS SET VisaNumber=@aVisaNumber , VisaDate=@aVisaDate ,Status=@aStatus Where Id=@aId";
 
+        private const string SelectPurchasesForReceiptCreationCommand = "reception.SelectPurchasesForReceiptCreation";
+
         private static PurchaseOrder getPurchaseOrdersData(SqlDataReader reader)
         {
             return new PurchaseOrder
@@ -222,9 +224,33 @@ namespace INV.Infrastructure.Storage.Purchases
             return await cmd.ExecuteNonQueryAsync();
         }
 
-        public ValueTask<List<PurchaseOrderInfo>> SelectPurchasesForReceiptCreation()
+        public async ValueTask<List<PurchaseOrderInfo>> SelectPurchasesForReceiptCreation()
         {
-            throw new NotImplementedException();
+            var purchaseOrdersInfo = new List<PurchaseOrderInfo>();
+            var purchaseProducts = new List<PurchaseProduct>();
+
+            using var sqlConnection = new SqlConnection(_connectionString);
+            await sqlConnection.OpenAsync();
+
+            using var cmd = new SqlCommand(SelectPurchasesForReceiptCreationCommand, sqlConnection)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+
+            using var reader = await cmd.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                purchaseOrdersInfo.Add(getPurchaseOrdersInfoData(reader));
+            }
+
+       
+            return (purchaseOrdersInfo);
         }
+
+        
+        
+        
+        
     }
 }
